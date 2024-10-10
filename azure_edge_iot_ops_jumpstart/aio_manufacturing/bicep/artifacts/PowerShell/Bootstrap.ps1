@@ -71,6 +71,7 @@ if (($rdpPort -ne $null) -and ($rdpPort -ne "") -and ($rdpPort -ne "3389")) {
 # Download configuration data file and declaring directories
 ##############################################################
 $ConfigurationDataFile = "C:\Temp\aioConfig.psd1"
+$templateBaseUrl = "https://raw.githubusercontent.com/marshallbentley/azure_arc/main/azure_edge_iot_ops_jumpstart/aio_manufacturing/bicep/"
 Invoke-WebRequest ($templateBaseUrl + "artifacts/PowerShell/aioConfig.psd1") -OutFile $ConfigurationDataFile
 
 $aioConfig = Import-PowerShellDataFile -Path $ConfigurationDataFile
