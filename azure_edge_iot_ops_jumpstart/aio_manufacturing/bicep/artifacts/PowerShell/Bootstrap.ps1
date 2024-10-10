@@ -18,23 +18,6 @@ param (
     [string]$rdpPort
 )
 
-Write-Host "adminUsername: $adminUsername"
-Write-Host "adminPassword: $adminPassword"
-Write-Host "spnClientId: $spnClientId"
-Write-Host "spnClientSecret: $spnClientSecret"
-Write-Host "spnTenantId: $spnTenantId"
-Write-Host "spnObjectId: $spnObjectId"
-Write-Host "subscriptionId: $subscriptionId"
-Write-Host "location: $location"
-Write-Host "templateBaseUrl: $templateBaseUrl"
-Write-Host "resourceGroup: $resourceGroup"
-Write-Host "windowsNode: $windowsNode"
-Write-Host "kubernetesDistribution: $kubernetesDistribution"
-Write-Host "customLocationRPOID: $customLocationRPOID"
-Write-Host "githubAccount: $githubAccount"
-Write-Host "githubBranch: $githubBranch"
-Write-Host "adxClusterName: $adxClusterName"
-
 [System.Environment]::SetEnvironmentVariable('adminUsername', $adminUsername, [System.EnvironmentVariableTarget]::Machine)
 [System.Environment]::SetEnvironmentVariable('adminPassword', $adminPassword, [System.EnvironmentVariableTarget]::Machine)
 [System.Environment]::SetEnvironmentVariable('spnClientId', $spnClientId, [System.EnvironmentVariableTarget]::Machine)
@@ -51,6 +34,23 @@ Write-Host "adxClusterName: $adxClusterName"
 [System.Environment]::SetEnvironmentVariable('githubAccount', $githubAccount, [System.EnvironmentVariableTarget]::Machine)
 [System.Environment]::SetEnvironmentVariable('githubBranch', $githubBranch, [System.EnvironmentVariableTarget]::Machine)
 [System.Environment]::SetEnvironmentVariable('adxClusterName', $adxClusterName, [System.EnvironmentVariableTarget]::Machine)
+
+Write-Host "adminUsername: $adminUsername"
+Write-Host "adminPassword: $adminPassword"
+Write-Host "spnClientId: $spnClientId"
+Write-Host "spnClientSecret: $spnClientSecret"
+Write-Host "spnTenantId: $spnTenantId"
+Write-Host "spnObjectId: $spnObjectId"
+Write-Host "subscriptionId: $subscriptionId"
+Write-Host "location: $location"
+Write-Host "templateBaseUrl: $templateBaseUrl"
+Write-Host "resourceGroup: $resourceGroup"
+Write-Host "windowsNode: $windowsNode"
+Write-Host "kubernetesDistribution: $kubernetesDistribution"
+Write-Host "customLocationRPOID: $customLocationRPOID"
+Write-Host "githubAccount: $githubAccount"
+Write-Host "githubBranch: $githubBranch"
+Write-Host "adxClusterName: $adxClusterName"
 
 ##############################################################
 # Change RDP Port
