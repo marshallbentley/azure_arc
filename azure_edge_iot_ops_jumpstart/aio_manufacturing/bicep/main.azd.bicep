@@ -93,7 +93,7 @@ param eventGridNamespaceName string = 'aioeventgridns${namingGuid}'
 param adxClusterName string = 'aioadx${namingGuid}'
 
 @description('The custom location RPO ID')
-param customLocationRPOID string
+param customLocationRPOID string = ''
 
 @description('The name of the Azure Key Vault')
 param akvName string = 'aioakv${namingGuid}'
